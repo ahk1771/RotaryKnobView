@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RotaryMusicKnob</string>
+
+    <string name="ZERO">1/4</string>
+    <string name="ONE">3/8</string>
+    <string name="TWO">1/2</string>
+    <string name="THREE">2/3</string>
+    <string name="FOUR">1</string>
+    <string name="FIVE">4/3</string>
+    <string name="SIX">3/2</string>
+    <string name="SEVEN">2</string>
+    <string name="EIGHT">3</string>
+    <string name="MIN">-</string>
+    <string name="MID">0</string>
+    <string name="MAX">+</string>
+    <string name="LimitMin">/</string>
+    <string name="LimitMax">\\</string>
+    <string name="knob_content">Rotate knob to get different values</string>
+</resources>

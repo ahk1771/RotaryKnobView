@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!--  Knob 1 mode: STEP  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LimitMin"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="218"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/knob1"
+            app:layout_constraintStart_toStartOf="@+id/knob1"
+            app:layout_constraintTop_toTopOf="@+id/knob1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LimitMax"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="142"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/knob1"
+            app:layout_constraintTop_toTopOf="@+id/knob1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ZERO"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="216"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ONE"
+            android:textSize="25sp"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="252"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/knob1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/knob1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TWO"
+            android:textSize="25sp"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="288"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/knob1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/knob1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/THREE"
+            android:textSize="25sp"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="324"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/knob1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/knob1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FOUR"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/knob1"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="360"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FIVE"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/knob1"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="36"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SIX"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/knob1"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="72"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SEVEN"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/knob1"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="108"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EIGHT"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/knob1"
+            app:layout_constraintCircleAngle="144"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/knobDisplay1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_bg"
+            android:padding="5dp"
+            android:text="@string/FOUR"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/knobDisplay2"
+            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51" />
+
+        <com.ahk.rotarymusicknob.MusicKnobView
+            android:id="@+id/knob1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="220dp"
+            app:initialValue="50"
+            app:knobDrawable="@drawable/ic_rotary_knob1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxValue="100"
+            app:minValue="0"
+            app:tagg="knob1" />
+        <!--  End Knob 1 -->
+
+        <!--  Knob 2 mode: SMOOTH  -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LimitMin"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintCircle="@id/knob2"
+            app:layout_constraintCircleAngle="218"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/knob2"
+            app:layout_constraintStart_toStartOf="@+id/knob2"
+            app:layout_constraintTop_toTopOf="@+id/knob2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MIN"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/knob2"
+            app:layout_constraintCircleAngle="216"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LimitMax"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintCircle="@id/knob2"
+            app:layout_constraintCircleAngle="142"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/knob2"
+            app:layout_constraintStart_toStartOf="@+id/knob2"
+            app:layout_constraintTop_toTopOf="@+id/knob2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MAX"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/knob2"
+            app:layout_constraintCircleAngle="144"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MID"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/knob2"
+            app:layout_constraintCircle="@id/knob2"
+            app:layout_constraintCircleAngle="360"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="@+id/knob2"
+            app:layout_constraintStart_toStartOf="@+id/knob2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/knobDisplay2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/MID"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corner_bg"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ahk.rotarymusicknob.MusicKnobView
+            android:id="@+id/knob2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="220dp"
+            app:initialValue="50"
+            app:knobDrawable="@drawable/ic_rotary_knob1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxValue="100"
+            app:minValue="-100"
+            app:tagg="knob2" />
+
+        <!--  End Knob 2 -->
+
+        <!--  Knob 3 mode: STEP  -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LimitMin"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="218"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/knob3"
+            app:layout_constraintStart_toStartOf="@+id/knob3"
+            app:layout_constraintTop_toTopOf="@+id/knob3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LimitMax"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="142"
+            app:layout_constraintCircleRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/knob3"
+            app:layout_constraintTop_toTopOf="@+id/knob3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ZERO"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="216"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ONE"
+            android:textSize="25sp"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="252"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/knob3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/knob3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TWO"
+            android:textSize="25sp"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="288"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/knob3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/knob3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/THREE"
+            android:textSize="25sp"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="324"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toStartOf="@+id/knob3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/knob3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FOUR"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/knob3"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="360"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FIVE"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/knob3"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="36"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SIX"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/knob3"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="72"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SEVEN"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/knob3"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="108"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EIGHT"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/knob3"
+            app:layout_constraintCircleAngle="144"
+            app:layout_constraintCircleRadius="80dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/knobDisplay3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_corner_bg"
+            android:padding="5dp"
+            android:text="@string/FOUR"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.822"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ahk.rotarymusicknob.MusicKnobView
+            android:id="@+id/knob3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="220dp"
+            app:initialValue="50"
+            app:knobDrawable="@drawable/ic_rotary_knob1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.853"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maxValue="100"
+            app:minValue="0"
+            app:tagg="knob3" />
+
+        <!--  End Knob 3 -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
